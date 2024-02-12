@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <meta name="description" content="OTBT Web" />
+    <title>Tic Tac Toe</title>
+    <!--  GOUGLE FONTS -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- GENERAL CSS FILE -->
+    <link rel="stylesheet" href="css/general.css" />
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-info hidden">
+      <div class="player player-0 player-Active">
+        <span class="name name-0"></span><span class="score score-0">0</span>
+      </div>
+      <div class="player player-1">
+        <span class="name name-1"></span><span class="score score-1">0</span>
+      </div>
+    </div>
+    <form class="game-plan">
+      <h2 class="infos-title">Plan Your game</h2>
+      <div class="input-info">
+        <label for="type">Play Alone Or with A frind</label>
+        <select id="type" name="info-type">
+          <option value="two">Player VS Player</option>
+          <option value="one">Play With Computer</option>
+        </select>
+      </div>
+      <div class="input-info">
+        <label for="player-0-input">Put First Player's Name</label>
+        <input id="player-input" type="text" />
+      </div>
+      <div class="input-info">
+        <label for="player-1-input">Put Second Player's Name</label>
+        <input id="player-input" type="text" />
+      </div>
+      <input class="btn start-btn" type="submit" value="Start" />
+    </form>
+    <div class="end-game hidden">
+      <p class="end-message">End Game's Message</p>
+      <button class="btn continue-btn">Continue</button>
+      <button class="btn restart-btn">Restart</button>
+    </div>
+    <div></div>
+    <div class="container">
+      <div class="box" data-number="1"><span></span><span></span></div>
+      <div class="box" data-number="2"><span></span><span></span></div>
+      <div class="box" data-number="3"><span></span><span></span></div>
+      <div class="box" data-number="4"><span></span><span></span></div>
+      <div class="box" data-number="5"><span></span><span></span></div>
+      <div class="box" data-number="6"><span></span><span></span></div>
+      <div class="box" data-number="7"><span></span><span></span></div>
+      <div class="box" data-number="8"><span></span><span></span></div>
+      <div class="box" data-number="9"><span></span><span></span></div>
+      <span class="line line-vert line-vert-1"></span>
+      <span class="line line-vert line-vert-2"></span>
+      <span class="line line-horiz line-horiz-1"></span>
+      <span class="line line-horiz line-horiz-2"></span>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

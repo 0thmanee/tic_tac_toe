@@ -1,0 +1,46 @@
+/* FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+  --main-color: #72abc6;
+  --light-main-color: #8ab4c7;
+  --bcg-color: #b89a85;
+  --light-bcg-color: #b89a85d8;
+  --line-depth: 1.5rem;
+  --main-transition: 0.3s;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: var(--bcg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+span {
+  display: block;
+}
+.container {
+  margin: 0 auto;
+  padding: 1.5rem;
+}
